@@ -245,7 +245,7 @@ issueId or key."
   (interactive (list (read-string "Issue Key or ID: ")
                      (read-string "Username to Remove as Watcher: ")))
   (jira-rest-api-interact "DELETE" nil (concat k "/watchers?" name)))
-  
+
 (defun jira-rest-change-assignee (k &optional name)
   "Change the assignee for an issue."
   (interactive (list (read-string "Issue Key or ID: ")
